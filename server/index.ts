@@ -80,7 +80,7 @@ app.use((req, res, next) => {
     // Only run in production environment
     if (process.env.NODE_ENV === "production") {
       const renderUrl = process.env.RENDER_EXTERNAL_URL || `https://brightstarts.onrender.com`;
-      const interval = 30000; // 30 seconds
+      const interval = 420000; // 30 seconds
       
       function keepAlive() {
         axios.get(renderUrl)
