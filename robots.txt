@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+
+# Main sitemap
+Sitemap: https://brightstarts.onrender.com/sitemap.xml
+
+# Crawl delay for polite crawling
+Crawl-delay: 1
+
+# Allow all search engines to access public content
+Allow: /flashcards
+Allow: /quizzes
+Allow: /notes
+Allow: /assignments
+Allow: /study-groups
+Allow: /dashboard
+
+# Disallow private/sensitive areas
+Disallow: /admin
+Disallow: /api/
+Disallow: /uploads/
+Disallow: /*.json$
+Disallow: /*?*
+
+# Block common bots that might be harmful
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /

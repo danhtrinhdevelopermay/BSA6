@@ -1,0 +1,5 @@
+Contact: mailto:security@brightstarts.onrender.com
+Expires: 2026-07-12T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://brightstarts.onrender.com/.well-known/security.txt
+Policy: https://brightstarts.onrender.com/security-policy
