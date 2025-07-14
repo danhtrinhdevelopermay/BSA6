@@ -45,14 +45,14 @@ export default function UsersPage() {
     onSuccess: (conversation) => {
       queryClient.invalidateQueries({ queryKey: ["/api/conversations"] });
       toast({
-        title: "Chat Started! 💬",
-        description: "You can now chat with this user.",
+        title: "Đã thêm bạn",
+        description: "Vào phần trò chuyện để bắt đầu trò chuyện với bạn mới này nhe.",
       });
     },
     onError: () => {
       toast({
         title: "Error",
-        description: "Failed to start conversation. Please try again.",
+        description: "Ôi! Không thể bắt đầu cuộc trò chuyện. Vui lòng thử lại.",
         variant: "destructive",
       });
     },
@@ -78,8 +78,8 @@ export default function UsersPage() {
           <Users className="text-primary-foreground w-6 h-6" />
         </div>
         <div>
-          <h1 className="text-2xl font-bold">Discover Users</h1>
-          <p className="text-muted-foreground">Find and connect with other StudyVibe users</p>
+          <h1 className="text-2xl font-bold">Bạn Bè Mới Nè🌷</h1>
+          <p className="text-muted-foreground">Tìm và nhấn kết bạn để bắt đầu trò chuyện thôi</p>
         </div>
       </div>
 
@@ -163,7 +163,7 @@ export default function UsersPage() {
                       size="sm"
                     >
                       <MessageCircle className="h-4 w-4 mr-2" />
-                      Start Chat
+                      Kết Bạn
                     </Button>
                   </CardContent>
                 </Card>
